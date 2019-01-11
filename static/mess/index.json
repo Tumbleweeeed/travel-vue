@@ -1,0 +1,129 @@
+{
+	"ret": true,
+	"data": {
+		"city": "北京",
+		"swiperList": [
+			{
+        		"id": "0001",
+        		"imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg"
+        	},
+        	{
+        		"id":"0002",
+        		"imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg"
+        	},
+        	{
+        		"id":"0003",
+        		"imgUrl": "http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg"
+        	},
+        	{
+        		"id":"0004",
+        		"imgUrl": "http://img1.qunarzz.com/piao/fusion/1812/d1/cd4f32e924a5a302.jpg_750x200_3d492837.jpg"
+        	}
+		],
+		"iconList": [
+					{
+						"id": "001",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+						"text": "景点门票"
+					},
+					{
+						"id": "002",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+						"text": "一日游"
+					},
+					{
+						"id": "003",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+						"text": "北京必游"
+					},
+					{
+						"id": "004",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+						"text": "帝都范儿"
+					},
+					{
+						"id": "005",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+						"text": "动植物园"
+					},
+					{
+						"id": "006",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
+						"text": "故宫"
+					},
+					{
+						"id": "007",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+						"text": "名胜古迹"
+					},
+					{
+						"id": "008",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fc/b10a6b2e4f0fe102.png",
+						"text": "北京滑雪"
+					},
+					{
+						"id": "009",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+						"text": "泡温泉"
+					},
+					{
+						"id": "010",
+						"imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b2/bfbc5d66e0ab5a02.png",
+						"text": "冰雪大世界"
+					}					
+		],
+		"recommendList": [
+				{
+					"id": "001",
+					"imgUrl": "http://img1.qunarzz.com/sight/p0/1712/95/95f38f28a6ff19cba3.img.jpg_200x200_af967e35.jpg",
+					"title": "水奥雪世界",
+					"text": "响应国家“百万市民上冰雪”的号召，让冰雪文化深入人心"
+				},
+				{
+					"id": "002",
+					"imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+					"title": "故宫",
+					"text": "是在明朝、清朝两代皇宫及其收藏的基础上建立起来的中国综合性博物馆"
+				},
+				{
+					"id": "003",
+					"imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_200x200_69e4a80d.jpg",
+					"title": "南山滑雪场",
+					"text": "北京南山滑雪度假村位于首都近郊东北方向密云区，距城区正南方约3公里，距北京市望和桥62公里"
+				},
+				{
+					"id": "004",
+					"imgUrl": "http://img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_200x200_8da8cebe.jpg",
+					"title": "春晖园温泉度假村",
+					"text": "春晖园温泉度假村位于北京市顺义区高丽营镇于庄，占地180万平方米"
+				}
+		],
+		"weekendList": [
+				{
+					"id": "001",
+					"imgUrl": "http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
+					"title": "京城周末撒欢",
+					"text": "在帝都过周末，不仅仅是城中游！"
+				},
+				{
+					"id": "002",
+					"imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+					"title": "京城有好泉",
+					"text": "细数北京温泉，温暖你的冬天"
+				},
+				{
+					"id": "003",
+					"imgUrl": "http://img1.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg",
+					"title": "京城溜娃必去",
+					"text": "德智体美劳全面发展的亲子日，这些地方该去看看…"
+				},
+				{
+					"id": "004",
+					"imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+					"title": "帝都必打卡",
+					"text": "来北京必去的景点非这些地方莫属"
+				}
+		]
+
+	}
+}

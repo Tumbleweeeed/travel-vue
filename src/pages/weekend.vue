@@ -2,7 +2,7 @@
 	<div>
 		<div class="recommend">周末去哪</div>
 		<ul>
-			<li class="item" v-for="(item,index) of recommendList" :key="index">
+			<li class="item" v-for="(item,index) of weekendList" :key="index">
 				<div class="weekendImg">
 					<img :src="item.imgUrl" alt="">
 				</div>
@@ -20,7 +20,7 @@ export default{
 	name: 'HomeWeekend',
 	data () {
 		return {
-			recommendList: [
+			weekendList: [
 				{
 					id: '001',
 					imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
