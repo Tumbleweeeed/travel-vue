@@ -2,7 +2,7 @@
 	<div>
 		<div class="recommend">热销推荐</div>
 		<ul>
-			<li class="item" v-for="(item,index) of recommendList" :key="index">
+			<li class="item" v-for="(item,index) of recommend" :key="index">
 				<div>
 					<img :src="item.imgUrl" alt="">
 				</div>
@@ -19,34 +19,11 @@
 <script>
 export default{
 	name: 'HomeRecommend',
+	props: {
+		recommend: Array
+	},
 	data () {
 		return {
-			recommendList: [
-				{
-					id: '001',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1712/95/95f38f28a6ff19cba3.img.jpg_200x200_af967e35.jpg',
-					title: '水奥雪世界',
-					text: '响应国家“百万市民上冰雪”的号召，让冰雪文化深入人心'
-				},
-				{
-					id: '002',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-					title: '故宫',
-					text: '是在明朝、清朝两代皇宫及其收藏的基础上建立起来的中国综合性博物馆'
-				},
-				{
-					id: '003',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_200x200_69e4a80d.jpg',
-					title: '南山滑雪场',
-					text: '北京南山滑雪度假村位于首都近郊东北方向密云区，距城区正南方约3公里，距北京市望和桥62公里'
-				},
-				{
-					id: '004',
-					imgUrl: 'http://img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_200x200_8da8cebe.jpg',
-					title: '春晖园温泉度假村',
-					text: '春晖园温泉度假村位于北京市顺义区高丽营镇于庄，占地180万平方米'
-				}
-			]
 		}
 	}
 }
