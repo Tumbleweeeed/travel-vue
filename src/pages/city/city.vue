@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<city-header></city-header>
-		<city-list :city='cities' :hot='hotcit'></city-list>
-		<city-alphabet :city='cities'></city-alphabet>
+		<city-list :city='cities' :hot='hotcit' :letter='letter'></city-list>
+		<city-alphabet :city='cities' @change='handelListChange'></city-alphabet>
 	</div>
 </template>
 
@@ -16,7 +16,8 @@
 		data () {
 			return {
 				cities: {},
-				hotcit: []
+				hotcit: [],
+				letter: ''
 			}
 		},
 		methods: {
@@ -25,13 +26,15 @@
 					.then(this.getMessage)
 			},
 			getMessage (res) {
-				console.log(res)
 				res = res.data
 				if( res.data && res.ret){
 					const data = res.data
 					this.cities = res.data.cities
 					this.hotcit = res.data.hotCities
 				}
+			},
+			handelListChange (world) {
+				this.letter = world
 			}
 		},
 		mounted () {
