@@ -17,10 +17,25 @@
 <script>
 export default{
 	name: 'CityAlphabet',
+	computed: {
+		letters () {
+			const letters = []
+			for(let i in this.city){
+				letters.push(i)
+			}
+			return letters
+		}
+
+	},
 	data () {
 		return {
-			touchStatus: false
+			touchStatus: false,
+			listY: 0,
+			timer: null
 		}
+	},
+	updated () {
+		this.listY = this.$refs['A'][0].offsetTop
 	},
 	props: {
 		city: Object
@@ -34,10 +49,15 @@ export default{
 		},
 		handleTouchMove (e) {
 			if(this.touchStatus){
-				const listY = this.$refs['A'][0].offsetTop
-				const touchY = e.touches[0].clientY - 86
-				const index = Math.floor((touchY - listY)/20)
-				console.log(index)
+				if(this.timer) {
+					clearTimeout(this.timer)
+				}
+				this.timer = setTimeout( ()=>{
+					const touchY = e.touches[0].clientY - 86
+					const index = Math.floor((touchY - this.listY)/20)
+					this.$emit('change',this.letters[index])
+				},16)
+
 			}
 		},
 		handleTouchEnd () {

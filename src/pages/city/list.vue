@@ -5,7 +5,7 @@
 				<div class="title">当前城市</div>
 				<div class="button-list">
 					<div class="button-wrapper">
-						<div class="button">北京</div>
+						<div class="button">{{ this.$store.state.city }}</div>
 					</div>
 				</div>
 			</div>
@@ -13,14 +13,21 @@
 				<div class="title">热门城市</div>
 				<div class="button-list">
 					<div class="button-wrapper" v-for='item of hot' :key='item.id'>
-						<div class="button">{{item.name}}</div>
+						<div class="button" @click='handleSwitch(item.name)'>{{item.name}}</div>
 					</div>
 				</div>
 			</div>
 			<div class="area border-topbottom" v-for='( item,key ) of city' :key='key' :ref='key'>
 				<div class="title">{{ key }}</div>
 				<ul class='list'>
-					<li class='item border-bottom' v-for='innerItem of item' :key='innerItem.id'>{{ innerItem.name }}</li>
+					<li 
+						class='item border-bottom' 
+						v-for='innerItem of item' 
+						:key='innerItem.id'
+						@click='handleSwitch(innerItem.name)'
+					>
+						{{ innerItem.name }}
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -36,6 +43,12 @@ export default{
 		hot: Array,
 		city: Object,
 		letter: String 
+	},
+	methods: {
+		handleSwitch (res) {
+			this.$store.dispatch('switchCity',res)
+			this.$router.push('/')
+		}
 	},
 	watch: {
 		letter () {
