@@ -48,7 +48,8 @@ export default{
 			border-radius:.1rem
 			color:#ccc
 		.header-right
-			width:1.24rem
+			min-width:1.24rem
+			padding-left:.1rem
 			float:right
 			text-align:center
 			color #fff
