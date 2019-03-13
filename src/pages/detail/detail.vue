@@ -32,7 +32,7 @@ export default {
 	},
 	methods: {
 		getDetailInfo () {
-			axios.get('api/detail.json?id='+this.$route.params.id)
+			axios.get('/static/api/detail.json?id='+this.$route.params.id)
 				.then(this.showMess)
 		},
 		showMess (res) {

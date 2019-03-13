@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json?city=' + this.$store.state.city)
+      axios.get('./static/api/index.json?city=' + this.$store.state.city)
         .then(this.showMessage)
     },
     showMessage (res) {

@@ -5,7 +5,7 @@
 			:key='key'
 			:ref='key' 
 			@click='handleLetterClick'
-			@touchstart='handleTouchStart'
+			@touchstart.prevent='handleTouchStart'
 			@touchmove='handleTouchMove'
 			@touchend='handleTouchEnd'
 		>
@@ -78,6 +78,7 @@ export default{
 		right .04rem
 		bottom 0
 		.item
+			width .6rem
 			line-height .4rem
 			text-align center
 			color $bgColor
